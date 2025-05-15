@@ -1,118 +1,236 @@
-<!DOCTYPE html>
+    <<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="practive.css">
+    <title>Sai Dheeraj Rangu - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="container">
-        
-            <li><a href="#">HOME</li></a>
-            <li><a href="#">ABOUT</li></a>
-            <li><a href="#">PROJECTS</li></a>
-            <li><a href="#">SKILLS</li></a>
-            <li><a href="#">CONTACT</li></a>
-        
-    </div>
-<div class="">
-    <div style="padding-top:30px; margin-left: 200px;">
-        <h3 style="font-size: 30px;"> Hello it's me</h3>
-        <h1 style="font-size: 60px;"> Sai Dheeraj Rangu</h1>
-        <h3 style="font-size: 30px;"> I am a <span class="color-box"> Python Full-Stack Developer </span></h3>
-        <button style="background-color:rgb(24, 240, 240);"><a href="C:\Users\syeda\Downloads\dheeraj rangu resume.pdf">download cv</button></a>
-        <div class="social-links">
-           <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-
-
-
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Port<span>folio</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
+    </nav>
 
-    </div>
-   
-</div>
-    
-    
-    </div>
-    </div>
-    <section id="about" style="box-sizing: border-box;">
-
-
-
-        <div style="width: 50%;  display: inline-block;">
-
-
-            
-
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h3 class="hero-greeting">Hello, it's me</h3>
+                <h1 class="hero-name">Sai Dheeraj Rangu</h1>
+                <h3 class="hero-title">I am a <span class="color-gradient">Python Full-Stack Developer</span></h3>
+                <a href="https://drive.google.com/uc?export=download&id=1zScsTthh-cEBkuplTIkYuHJd2hcwtjB2" class="btn" download="SaiDheeraj_CV.pdf">Download CV</a>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/rangu-sai-dheeraj-85683334a/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/dheerajrangu29"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/dheeraj_2129/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
         </div>
-
-        <div style="width: 47%;display: inline-block;">
-
-
-            <div style="width: 90%;display: inline-block;">
-                <h1>About <span style="color:blueviolet;">Me</span></h1>
-                <h3> Frontend Developer</h3>
-                <P>I'm RANGU SAI DHEERAJ, a recent graduate in ELECTRONICES AND COMMUNICATION ENGINEERING, passionate
-                    about PYTHON FUL-STACK I've developed skills in PYTHON,HTML,CSS,SQL,DJANGO,JAVA SCRIPT through
-                    coursework and projects, and I'm eager to apply them in a professional setting. I'm a quick learner,
-                    thrive in collaborative environments, and am excited to grow and contribute to a team. Outside of
-                    work, I enjoy BROUSEING INTERNET,COOKING,TRAVELING,etc...</P>
-
-                <button style="background-color: aqua; margin-left: 200px;" class="button-zoom"><a href="#about"
-                    >Read more</button></a>
-
-
     </section>
 
-    <div style="padding-top:30px; margin-left: 200px;" id="about">
-        <h1 style="font-size: 30px;"> My <span style="color: blueviolet;"> Projects </span></h1>
-        <h1>Object detection system using ultra sonic sensor :</h1>
-        <p> The Object Detector project integrates an ultrasonic sensor with the CH V
-            RISC-V processor to detect nearby objects.
-            By utilizing the ultrasonic sensor, the system can detect objects within its range and alert the user by
-            switching on an LED</p>
-        <h1> Sign recognition and voice conversation device :</h1>
-        <p> The main objective of this project is to recognize signs of dumb people and convert into voice commands</p>
+            <section id="about">
+                <div class="section-container">
+                    <div class="about-grid">
+                        <div class="about-image fade-in">
+                            <img src="/assets/SAI01616.JPG" alt="Sai Dheeraj Rangu" width="600" height="400">
+                        </div>
+                        <div class="about-content fade-in">
+                            <h2 class="section-title">About <span style="color:blueviolet;">Me</span></h2>
+                            <h3 class="section-subtitle">Frontend Developer | Python Full-Stack Engineer</h3>
+                            <p class="about-text">
+                                I'm <strong>Rangu Sai Dheeraj</strong>, a recent <strong>B.Tech graduate in Electronics and Communication Engineering</strong> passionate about building innovative web solutions. Skilled in <strong>Python, Django, JavaScript, and React.js</strong>, I combine technical expertise with creative problem-solving to develop user-centric applications.
+                            </p>
+                            <a href="#about" class="btn read-more-btn" onclick="toggleReadMore()">Read More</a>
+                            
+                            <!-- Expanded Content -->
+                            <div id="about-expanded" class="about-expanded">
+                                <h4 class="expanded-title">Education & Background</h4>
+                                <ul>
+                                    <li>🎓 <strong>B.Tech (ECE)</strong> - Vaagdevi College of Engineering, Warangal (2020-2024) | CGPA: 6.5</li>
+                                    <li>📚 <strong>Intermediate (MPC)</strong> - Alphores Junior College, Karimnagar (2018-2020) | Percentage: 71%</li>
+                                    <li>🏫 <strong>SSC</strong> - Trinity Model Secondary School, Peddapalli (2017-2018) | GPA: 8.0</li>
+                                </ul>
+                                
+                                <h4 class="expanded-title">Certifications & Achievements</h4>
+                                <ul>
+                                    <li>🏅 <strong>PCAP: Python Programming</strong> - Cisco Networking Academy (2023)</li>
+                                    <li>📜 <strong>Python Full Stack Developer</strong> - AimNxt School of Tech Leaders (2024)</li>
+                                    <li>🔌 <strong>IEEE Member</strong> - Contributed to 3 technical workshops (2022-2024)</li>
+                                    <li>📢 <strong>Technical Speaker</strong> - Delivered talks on IoT applications at college events</li>
+                                </ul>
+                                
+                                <div class="additional-info">
+                                    <h4 class="expanded-title">Languages & Interests</h4>
+                                    <p>
+                                        <strong>Languages:</strong> English (Professional), Hindi (Fluent), Telugu (Native)<br>
+                                        <strong>Interests:</strong> Open Source Contributions, Tech Blogging, Competitive Programming, Cooking exotic cuisines
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-
-
-    </div>
-<div style="padding-top: 30px;margin-left: 200px;">
-<h2>My<span style="color: blueviolet;"> Skills</span></h2></div>
-
-<div class="table">
-<h2>Python Full Stack Developer Skills</h2>
-<table>
-    <tr>
-        <th>Category</th>
-        <th>Skills</th>
-    </tr>
-    <tr>
-        <td>Frontend</td>
-        <td>HTML, CSS, JavaScript, React</td>
-    </tr>
-    <tr>
-        <td>Backend</td>
-        <td>Python, Django</td>
-    </tr>
-    <tr>
-        <td>Database</td>
-        <td> MySQL, MongoDB</td>
-    </tr>
-    <tr>
-        <td>Version Control</td>
-        <td>Git, GitHub</td>
-    </tr>
-    
-</div>
-</table>
-
-    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-container">
+            <div class="projects-header">
+                <h2 class="section-title">My <span style="color: blueviolet;">Projects</span></h2>
+                <p>Here are some of the projects I've worked on</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-img">
+                        <img src="/assets/object_detect.jpg" alt="Object Detection">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Object detection system using ultrasonic sensor</h3>
+                        <p class="project-desc">
+                            The Object Detector project integrates an ultrasonic sensor with the CH V
+                            RISC-V processor to detect nearby objects.
+                            By utilizing the ultrasonic sensor, the system can detect objects within its range and alert the user by
+                            switching on an LED.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Electronics</span>
+                            <span class="project-tag">Sensors</span>
+                            <span class="project-tag">RISC-V</span>
+                        </div>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-img">
+                        <img src="/assets/sign_recognization.jpg" alt="Sign Recognition">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sign recognition and voice conversation device</h3>
+                        <p class="project-desc">
+                            The main objective of this project is to recognize signs of dumb people and convert into voice commands.
+                            This system helps bridge communication gaps for people with hearing and speech disabilities.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">AI</span>
+                            <span class="project-tag">Computer Vision</span>
+                            <span class="project-tag">Accessibility</span>
+                        </div>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-container">
+            <div class="skills-header">
+                <h2 class="section-title">My <span style="color: blueviolet;">Skills</span></h2>
+                <p>Technologies and tools I work with</p>
+            </div>
+            <div class="skills-table-container fade-in">
+                <table class="skills-table">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Skills</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Frontend</td>
+                            <td>HTML, CSS, JavaScript, React</td>
+                        </tr>
+                        <tr>
+                            <td>Backend</td>
+                            <td>Python, Django</td>
+                        </tr>
+                        <tr>
+                            <td>Database</td>
+                            <td>MySQL, MongoDB</td>
+                        </tr>
+                        <tr>
+                            <td>Version Control</td>
+                            <td>Git, GitHub</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-container">
+            <div class="contact-header">
+                <h2 class="section-title">Contact <span style="color: blueviolet;">Me</span></h2>
+                <p>Get in touch for opportunities or collaborations</p>
+            </div>
+            <div class="contact-form fade-in">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" class="form-control" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="form-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-text">Let's connect and build something amazing together!</div>
+            <div class="footer-links">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="copyright">&copy; 2025 Sai Dheeraj Rangu. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="index.js">
+        // Mobile menu toggle
+       
+    </script>
 </body>
-
 </html>
