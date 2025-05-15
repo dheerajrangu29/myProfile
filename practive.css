@@ -1,0 +1,88 @@
+
+body {
+    font-family: Arial, sans-serif; /* Arial is a common sans-serif font */
+}
+
+
+.container li a :hover{
+    color :rgb(205, 196, 25);
+}
+.button-zoom :hover{color: blueviolet;
+    background-color: antiquewhite;
+    
+}
+
+.container{
+    display:flex;
+    justify-content:right;
+    font-size: 20px;
+   list-style: none;   
+}
+
+
+.color-box{
+    background: linear-gradient(to right, red, yellow);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+.a{
+    text-decoration: none;
+    color:black;
+
+}
+.container a:hover{
+    color: rgb(238, 12, 39);
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    font-weight: 500;
+    
+}
+
+li{
+    padding: 10px 30px;
+}
+
+
+
+div{
+    
+    background-position: 800px 69px;
+    background-size: 350px;
+    background-repeat: no-repeat;
+}
+
+button{
+    background-position: 400px 300px;
+}
+.table{
+    
+  
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        text-align: center;
+        margin: 20px;
+    }
+    table {
+        width: 60%;
+        margin: auto;
+        border-collapse: collapse;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    th, td {
+        padding: 12px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+    th {
+        background-color: #007bff;
+        color: white;
+    }
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+
+
